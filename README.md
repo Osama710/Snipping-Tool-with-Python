@@ -22,5 +22,5 @@ This tool allows the user to take a screenshot in the snipping style and it will
 The Tool is developed by [Muhammad Osama](https://github.com/Osama710)
 
 ## Screenshots
-![](screenshots/main.png) 
-![](screenshots/info.png)
+![](Screenshots/main.png) 
+![](Screenshots/info.png)
