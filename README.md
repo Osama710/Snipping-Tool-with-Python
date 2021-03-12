@@ -19,10 +19,6 @@ This tool allows the user to take a screenshot in the snipping style and it will
 
 **The snipped imaged will be saved in the same folder with name Capture.png**
 
-### Extras
-An exe file is also included in the folder which can run in any pc without python. **Just Like a Snipping Tool Application!!**
-*Double Click on the snipping.exe file to run*
-
 The Tool is developed by [Muhammad Osama](https://github.com/Osama710)
 
 ## Screenshots
