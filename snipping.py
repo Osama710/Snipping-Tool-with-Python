@@ -3,6 +3,8 @@ from tkinter import *
 import pyautogui
 import webbrowser
 from tkinter import ttk, messagebox
+from datetime import datetime
+
 
 class Application():
     def __init__(self) -> None:
@@ -12,6 +14,9 @@ class Application():
 
         self.main_window = self.createWindow("Snipping Tool")
         self.main_window.config(bg=self.bg)
+
+        self.photo = PhotoImage(file = "cut.png")
+        self.main_window.iconphoto(False, self.photo)
 
         self.title = tk.Label(self.main_window, text="SNIPPING TOOL", font=("HELVETICA",28,"bold"),bg=self.bg,fg=self.fg)
         self.title.grid(row=0,column=0,sticky=N,pady=(40,20),padx=40)
@@ -51,8 +56,11 @@ class Application():
         return window
 
     def takeBoundedScreenShot(self, x1, y1, x2, y2):
+        
+        date_time = datetime.now().strftime("%d-%m-%Y-%H-%M-%S")
+        path = "Capture"+date_time+".png"
         im = pyautogui.screenshot(region=(x1, y1, x2, y2))
-        im.save("Capture.png")
+        im.save(path+".png")
 
     def snipImage(self):
         self.rect = None
