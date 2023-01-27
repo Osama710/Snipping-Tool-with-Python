@@ -25,5 +25,5 @@ The .exe for the snipping tool can be found in the release section which can be 
 The Tool is developed by [Muhammad Osama](https://www.flowcode.com/page/osamayousuf)
 
 ## Screenshots
-![](Screenshots/main.PNG) 
-![](Screenshots/info.PNG)
+![](Screenshots/main_image.PNG) 
+![](Screenshots/info_image.PNG)
