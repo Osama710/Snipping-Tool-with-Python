@@ -4,6 +4,7 @@ import pyautogui
 import webbrowser
 from tkinter import ttk, messagebox
 from datetime import datetime
+import os
 
 
 class Application():
@@ -14,8 +15,10 @@ class Application():
 
         self.main_window = self.createWindow("Snipping Tool")
         self.main_window.config(bg=self.bg)
+        self.main_window.resizable(0,0)
 
-        self.photo = PhotoImage(file = "cut.png")
+        self.pic = os.path.join(os.path.dirname(__file__), 'cut.png')
+        self.photo = PhotoImage(file = self.pic)
         self.main_window.iconphoto(False, self.photo)
 
         self.title = tk.Label(self.main_window, text="SNIPPING TOOL", font=("HELVETICA",28,"bold"),bg=self.bg,fg=self.fg)
@@ -110,7 +113,7 @@ class Application():
         self.pos = tk.Label(self.main_window,text="", font=("HELVETICA",12),bg=self.bg,fg=self.fg)
 
         if self.start_x <= self.curX and self.start_y <= self.curY:
-            self.pos["text"] = "From Left to Downward"
+            self.pos["text"] = "From Left to Downward "
             self.takeBoundedScreenShot(self.start_x, self.start_y, self.curX - self.start_x, self.curY - self.start_y)
 
         elif self.start_x >= self.curX and self.start_y <= self.curY:
@@ -118,11 +121,11 @@ class Application():
             self.takeBoundedScreenShot(self.curX, self.start_y, self.start_x - self.curX, self.curY - self.start_y)
 
         elif self.start_x <= self.curX and self.start_y >= self.curY:
-            self.pos["text"] = "From Left to Upward"
+            self.pos["text"] = "From Left to Upward   "
             self.takeBoundedScreenShot(self.start_x, self.curY, self.curX - self.start_x, self.start_y - self.curY)
 
         elif self.start_x >= self.curX and self.start_y >= self.curY:
-            self.pos["text"] = "From Right to Upward"
+            self.pos["text"] = "From Right to Upward  "
             self.takeBoundedScreenShot(self.curX, self.curY, self.start_x - self.curX, self.start_y - self.curY)
 
         self.pos.grid(row=6,column=0,padx=20,pady=10)
