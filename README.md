@@ -20,9 +20,9 @@ This tool allows the user to take a screenshot in the snipping style and it will
 ### Executable File in Release
 The .exe for the snipping tool can be found in the release section which can be downloaded and can easily be used by anyone.
 
-**The snipped imaged will be saved in the same folder with name Capture.png**
+**The snipped imaged will be saved in the same folder with name Capture_{current date and time}.png**
 
-The Tool is developed by [Muhammad Osama](https://github.com/Osama710)
+The Tool is developed by [Muhammad Osama](https://www.flowcode.com/page/osamayousuf)
 
 ## Screenshots
 ![](Screenshots/main.PNG) 
