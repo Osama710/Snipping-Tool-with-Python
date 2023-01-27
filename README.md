@@ -17,6 +17,9 @@ This Tool is developed using **Python**. Following are the libraries used:
 
 This tool allows the user to take a screenshot in the snipping style and it will display the coordinates information along with the mouse position.
 
+### Executable File in Release
+The .exe for the snipping tool can be found in the release section which can be downloaded and can easily be used by anyone.
+
 **The snipped imaged will be saved in the same folder with name Capture.png**
 
 The Tool is developed by [Muhammad Osama](https://github.com/Osama710)
